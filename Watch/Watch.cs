@@ -18,6 +18,7 @@ namespace Watch
         {
             this.Size = new System.Drawing.Size(200, 200);
             this.Paint += ClockControl_Paint;
+            this.Location = new Point(40, 40);
             timer = new Timer();
             timer.Interval = 1000;
             timer.Enabled = true;

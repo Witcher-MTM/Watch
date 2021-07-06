@@ -15,6 +15,24 @@ namespace Watch
         public Form1()
         {
             InitializeComponent();
+            this.Controls.Add(new Watch());
+         
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            this.button1.BackColor = Color.Red;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            this.button1.BackColor = Color.White;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Environment.Exit(0);
         }
     }
 }
